@@ -1,6 +1,10 @@
 from byotest import *
 
-eur_coins = [100,50,20,10,5,2,1]
+eur_dict = {100:20,50:20,20:20,10:20,5:20,2:20,1:20}
+# print('Number of 20 cent coins:' + str(eur_dict[20]))
+
+eur_coins = eur_dict.keys()
+# eur_coins = [100,50,20,10,5,2,1]
 usd_coins =  [100,50,25,10,5,1]
 
 def get_change(amount,coins=eur_coins):
